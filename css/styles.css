@@ -1,0 +1,146 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F9EAD2;
+    margin: 0;  /* Ensure there's no default margin around the body */
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: #F5CBA7;
+    color: #2E2E2E;
+    position: fixed;  /* Fixes the sidebar to the left */
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 16.6667%; /* 2 columns out of 12 (2/12) */
+    padding-top: 20px;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+.sidebar h2 {
+    font-family: 'Hanalei Fill';
+    font-weight: bold;
+    text-align: center;
+}
+
+.sidebar input[type="text"] {
+    margin: 20px 0;
+    background-color: #F5D5AE;
+    border-radius: 12px;
+    border: 2px solid #A87231;
+}
+
+.custom-icon {
+    color: #837979;   
+    font-size: 1.5em;  
+    padding-right: 5px; 
+}
+
+/* Main Content */
+main {
+    margin-left: 16.6667%;
+    padding-top: 20px; 
+}
+
+.btn-start {
+    background-color: #A5663E;;
+    color: #FFF;
+    padding: 10px 20px;
+    font-weight: bold;
+    border: none;
+    font-size: 1.15rem;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('../images/background.jpg') ;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 400px 600px; 
+    width: 100%;
+    padding: 50px 0;  
+}
+
+.hero h1 {
+    color: #D96B27;
+    font-family: 'Pacifico';
+}
+
+.hero h3 {
+    font-family: 'Dancing Script';
+}
+
+.hero p {
+    font-family: 'Playfair Display';
+}
+
+/* Ensure carousel items do not overflow */
+.carousel-item {
+    justify-content: space-between;
+    align-items: center;
+    height: 400px;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%; 
+}
+
+/* Text area should not overflow */
+.carousel-caption {
+    width: 30%;
+    height: 100%; 
+}
+
+.carousel-caption h5 {
+    font-family: 'Pacifico';
+    font-size: 2 rem;
+    color: #2d2d2d;
+}
+
+.carousel-caption small {
+    font-family: 'Dancing Script';
+    font-size: 1rem;
+    color: #666;
+    font-style: italic;
+}
+
+.carousel-caption p {
+    font-family: 'Playfair Display';
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #444;
+}
+
+.btn-outline-secondary {
+    color: #A5663E;
+    border-color: #A5663E;
+}
+
+.card-img-top {
+    object-fit: cover;
+    height: 350px; 
+    width: 100%;
+}
+
+.custom-input {
+    background-color: #f0f0f0; 
+    border: 1px solid #ccc;   
+    border-radius: 50px 0 0 50px; 
+}
+
+.custom-subscribe-btn {
+    background-color: white;
+    color: black;
+    border: 1px solid #000;
+    border-radius: 0 50px 50px 0;  
+}
+
+.footer {
+    background-color: #E2CFC4;
+}

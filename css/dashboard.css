@@ -1,36 +1,190 @@
+/* Submit Button */
 .submit-btn {
-    background-color: #A35638;
-    color: white;
-    border: none;
-    padding: 8px;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 24px;
-    cursor: pointer;
+  background-color: #A35638;
+  color: white;
+  border: none;
+  padding: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 24px;
+  cursor: pointer;
 }
 
+/* Favorites Section */
 .favorites-section {
-    white-space: nowrap;
-    overflow-x: auto;
-    padding: 1rem 0;
-  }
+  white-space: nowrap;
+  overflow-x: auto;
+  padding: 1rem 0;
+}
 
-  .favorite-item {
-    display: inline-block;
-  }
+.favorite-item {
+  display: inline-block;
+}
 
-  .favorite-cover {
-    width: 150px; 
-    height: auto;
-    border-radius: 8px;
-    transition: transform 0.2s;
-  }
+.favorite-cover {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
 
-  .favorite-cover:hover {
-    transform: scale(1.05); 
-  }
+.favorite-cover:hover {
+  transform: scale(1.05);
+}
 
-  .favorites-section::-webkit-scrollbar {
-    height: 8px;
-  }
+.favorites-section::-webkit-scrollbar {
+  height: 8px;
+}
 
+/* Author Card */
+.author-card {
+  width: 120px;
+  height: 200px;
+  padding: 10px;
+  text-align: center;
+  margin-right: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.author-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.author-card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s;
+}
+
+/* Trending Authors Container */
+.trending-authors-container,
+.recommendation-container {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.trending-authors-container::-webkit-scrollbar,
+.recommendation-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Tab Buttons */
+.tab-buttons button,
+.tab-buttons .dropdown-toggle {
+  margin-right: 10px;
+  padding: 8px 16px;
+  border: none;
+  background-color: #f8f4ed;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #333;
+}
+
+.tab-buttons .dropdown-menu {
+  background-color: #f8f4ed;
+  border: none;
+}
+
+.tab-buttons .dropdown-menu a {
+  color: #333;
+  padding: 8px 16px;
+}
+
+.tab-buttons .dropdown-menu a:hover {
+  background-color: #ece2d0;
+}
+
+/* Roman Card */
+.roman-card {
+  width: 250px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  background-color: #f8f4ed;
+  margin-bottom: 20px;
+}
+
+.roman-content {
+  padding: 15px;
+  flex: 1;
+}
+
+.roman-content .title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #555;
+}
+
+.roman-content .author {
+  font-size: 1rem;
+  color: #888;
+}
+
+.roman-content .description {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 10px;
+}
+
+.roman-image img {
+  width: 150px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0 15px 15px 0;
+}
+
+/* Story Card */
+.story-card {
+  width: 220px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #f8f4ed;
+  margin-bottom: 20px;
+}
+
+.image-section img {
+  width: 100%;
+  height: 150px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  object-fit: cover;
+}
+
+.image-section .overlay-text {
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  color: #5a3e2b;
+  font-weight: bold;
+}
+
+.content-section {
+  padding: 15px;
+}
+
+.content-section .title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.content-section .rating {
+  color: #ffc107;
+  font-size: 1rem;
+}
+
+.content-section .genre {
+  font-size: 0.9rem;
+  color: #777;
+}

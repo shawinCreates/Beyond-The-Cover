@@ -7,12 +7,23 @@ body {
     box-sizing: border-box;
 }
 
+.btn-primary, .submit-btn {
+    background-color: #A35638;
+    color: white;
+    border: none;
+    padding: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
 main p {
     font-family: 'Caveat', cursive;
     font-size: 1.2rem;
     color: #5A3E36;
     line-height: 1.6;
-  }
+}
 
 /* Sidebar */
 .sidebar {

@@ -4,12 +4,83 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us</title>
-  
+
   <!-- External CSS Links -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      background-color: #FDECD0;
+      font-family: Arial, sans-serif;
+    }
+    .sidebar {
+      background-color: #E2C19D;
+      color: #333;
+      min-height: 100vh;
+    }
+    .sidebar h2 {
+      font-family: 'Hanalei Fill', cursive;
+      color: #333;
+    }
+    .custom-search {
+      background-color: #FDECD0;
+      border-radius: 10px;
+    }
+    .custom-icon {
+      color: #A64B2A;
+    }
+    .submit-btn {
+      background-color: #A64B2A;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+    }
+    .contact-section h1 {
+      font-family: 'Jim Nightshade', cursive;
+      font-size: 36px;
+      color: #333;
+    }
+    .contact-section p {
+      font-size: 16px;
+      color: #333;
+    }
+    .card {
+      background-color: #D9C2A3;
+      border-radius: 10px;
+    }
+    .card-title {
+      font-family: 'Jim Nightshade', cursive;
+      font-size: 24px;
+      color: #333;
+    }
+    .form-control {
+      border-radius: 20px;
+      background-color: #E2C19D;
+      color: #333;
+      border: none;
+    }
+    .form-control::placeholder {
+      color: #666;
+    }
+    .custom-subscribe-btn {
+      background-color: #A64B2A;
+      color: #fff;
+      border-radius: 20px;
+    }
+    .footer {
+      background-color: #D9C2A3;
+    }
+    .footer h5 {
+      color: #333;
+      font-weight: bold;
+    }
+    .footer a {
+      color: #333;
+    }
+    .footer .fab {
+      color: #A64B2A;
+    }
+  </style>
 </head>
 <body>
 
@@ -17,10 +88,10 @@
     <div class="row">
 
       <!-- Sidebar -->
-      <aside class="col-md-2 sidebar py-4 px-3 d-flex flex-column" style="min-height: 100vh;">
+      <aside class="col-md-2 sidebar py-4 px-3 d-flex flex-column">
         <img src="images/beyondPages-01.png" alt="logo" class="img-fluid mx-auto d-block" style="max-width: 100px;">
         <h2 class="fs-5 fw-bold text-center">Beyond The Cover</h2>
-        
+
         <!-- Search Box -->
         <div class="input-group mb-3">
           <input type="text" placeholder="Search" class="form-control custom-search">
@@ -48,9 +119,9 @@
       <!-- Main Content -->
       <main class="col-md-9 col-lg-10">
         <section class="contact-section py-5">
-            <h1 class="mb-4" style="font-family: 'Jim Nightshade', cursive;">Contact Us</h1>
+            <h1 class="mb-4">Contact Us</h1>
             <p>Email, call, or complete the form to connect with us. We are available all the time.</p>
-  
+
             <div class="row">
               <div class="col-md-6">
                 <p>
@@ -60,9 +131,9 @@
                   <a href="mailto:info@beyondcover.com" class="text-dark">info@beyondcover.com</a>
                 </p>
               </div>
-  
+
               <div class="col-md-6">
-                <div class="card p-4" style="background-color: #D9C2A3; border-radius: 10px;">
+                <div class="card p-4">
                   <h5 class="card-title">Share your spark with us</h5>
                   <form>
                     <div class="row mb-3">
@@ -88,7 +159,7 @@
                         By contacting us, you agree to our Terms of Service and Privacy Policy
                       </label>
                     </div>
-                    <button type="submit" class="btn btn-primary w-100" style="background-color: #A64B2A;">Submit</button>
+                    <button type="submit" class="btn w-100" style="background-color: #A64B2A; color: #fff;">Submit</button>
                   </form>
                 </div>
               </div>
@@ -138,7 +209,6 @@
       </main>
     </div>
   </div>
-
 
   <!-- Bootstrap Bundle with Popper.js -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>

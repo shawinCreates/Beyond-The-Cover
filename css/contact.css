@@ -1,0 +1,94 @@
+/* Contact Section */
+.contact-section {
+  padding: 150px 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Heading and Text */
+.contact-section h1 {
+  font-family: 'Jim Nightshade';
+  font-size: 2.5rem;
+  color: #5C4033;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.contact-section p,
+.contact-section .contact-info p {
+  color: #5C4033;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+.contact-section p {
+  margin-left: 3rem;
+  margin-bottom: 3rem;
+}
+
+.contact-section .contact-info p {
+  font-size: 1rem;
+  margin-left: 5rem;
+}
+
+.contact-section .contact-info strong {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* Contact Card */
+.contact-section .card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: none;
+  background-color: #D9C2A3;
+  border-radius: 15px;
+  padding: 20px;
+  max-width: 400px;
+  margin: 0 auto; /* Center the card */
+}
+
+.contact-section .card-title {
+  font-family: 'Great Vibes';
+  font-size: 1.8rem;
+  color: #A64B2A;
+  margin-bottom: 20px;
+}
+
+/* Form Fields */
+.contact-section input,
+.contact-section textarea {
+  background-color: #F9E4CC;
+  border: 1px solid #d3b593;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  color: #5C4033;
+}
+
+.contact-section input::placeholder,
+.contact-section textarea::placeholder {
+  font-style: italic;
+  color: #A64B2A;
+}
+
+/* Submit Button */
+.contact-section button {
+  background-color: #A64B2A;
+  color: #FFF;
+  border: none;
+  border-radius: 24px;
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+.contact-section button:hover {
+  background-color: #843722;
+}
+
+/* Checkbox Label */
+.contact-section .form-check-label {
+  font-size: 0.85rem;
+  color: #5C4033;
+  line-height: 1.4;
+}

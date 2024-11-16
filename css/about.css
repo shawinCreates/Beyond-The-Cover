@@ -11,7 +11,7 @@
     color: #A65C50;
   }
 
-.reader h5, .writer h5 {
+.reader h4, .writer h4 {
   font-family: 'Great Vibes', cursive; 
   font-size: 1.8rem;
   color: #A65C50;
@@ -21,7 +21,7 @@
 
 main p {
   font-family: 'Caveat', cursive;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   color: #5A3E36;
   line-height: 1.6;
 }

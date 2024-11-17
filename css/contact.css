@@ -92,3 +92,36 @@
   color: #5C4033;
   line-height: 1.4;
 }
+
+.modal-content {
+  background-color: #D9C2A3; /* Match your theme's card color */
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-title {
+  font-family: 'Jim Nightshade', cursive;
+  color: #A64B2A;
+  font-size: 2rem;
+}
+
+.modal-body p {
+  font-family: 'Caveat', cursive;
+  color: #5C4033;
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.modal-footer .btn {
+  background-color: #A64B2A;
+  color: #FFF;
+  border-radius: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.modal-footer .btn:hover {
+  background-color: #843722;
+}

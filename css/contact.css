@@ -16,6 +16,7 @@
 
 .contact-section p,
 .contact-section .contact-info p {
+  font-size: 1.7rem;
   color: #5C4033;
   line-height: 1.6;
   margin-bottom: 0.5rem;
@@ -27,13 +28,12 @@
 }
 
 .contact-section .contact-info p {
-  font-size: 1rem;
   margin-left: 5rem;
 }
 
 .contact-section .contact-info strong {
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 2.2rem;
 }
 
 /* Contact Card */
@@ -47,7 +47,7 @@
   margin: 0 auto; /* Center the card */
 }
 
-.contact-section .card-title {
+.contact-title {
   font-family: 'Great Vibes';
   font-size: 1.8rem;
   color: #A64B2A;

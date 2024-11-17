@@ -47,7 +47,7 @@
   margin: 0 auto; /* Center the card */
 }
 
-.contact-title {
+.contact-section .card-title {
   font-family: 'Great Vibes';
   font-size: 1.8rem;
   color: #A64B2A;

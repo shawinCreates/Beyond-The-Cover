@@ -1,0 +1,81 @@
+/* submit.css */
+
+/* Main Content */
+.title {
+    font-family: 'Jim Nightshade', cursive;
+    font-size: 2rem;
+    color: #3d2b1f;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  /* Form Card Styling */
+  .card {
+    background-color: #f4d7bd;
+    border: 2px solid #c49c83;
+    border-radius: 10px;
+  }
+  
+  .card-title {
+    font-family: 'Jim Nightshade', cursive;
+    font-size: 1.5rem;
+    color: #3d2b1f;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Form Fields */
+  .form-control {
+    border: 2px solid #c49c83;
+    font-family: 'Caveat', cursive;
+    font-size: 1rem;
+    border-radius: 5px;
+    padding: 0.5rem;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  .form-select {
+    border: 2px solid #c49c83;
+    font-family: 'Caveat', cursive;
+    font-size: 1rem;
+    border-radius: 5px;
+  }
+  
+  /* File Input */
+  .form-label {
+    font-family: 'Caveat', cursive;
+    font-size: 1rem;
+    color: #3d2b1f;
+  }
+  
+  .text-muted {
+    font-size: 0.8rem;
+    color: #6c4f36;
+  }
+  
+  /* Checkboxes */
+  .form-check-label {
+    font-size: 0.9rem;
+    color: #6c4f36;
+    font-family: 'Caveat', cursive;
+  }
+  
+  /* Submit Button */
+  .btn-submit {
+    background-color: #7c4f3f;
+    color: #fff;
+    font-size: 1.2rem;
+    border: none;
+    font-family: 'Jim Nightshade', cursive;
+    padding: 0.5rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-submit:hover {
+    background-color: #5e3c2f;
+  }
+  

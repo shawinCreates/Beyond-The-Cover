@@ -58,5 +58,7 @@
     font-size: 1.2rem;
     font-family: 'Satisfy';
     border-radius: 25px;
+    border: 3px solid #9B8962;
+    padding: 0 1rem;
     transition: all 0.3s ease;
   }

@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dashboard</title>
 
-  <!-- External CSS Links -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/dashboard.css">
-  <link href="https://fonts.googleapis.com/css2?family=Hanalei+Fill&family=Pacifico&family=Playfair+Display&family=Dancing+Script&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Jim+Nightshade&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script&family=Great+Vibes&family=Hanalei+Fill&family=Indie+Flower&family=Jim+Nightshade&family=Pacifico&family=Pattaya&family=Playfair+Display&family=Satisfy&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
@@ -18,12 +18,10 @@
   <div class="container-fluid">
     <div class="row">
 
-      <!-- Sidebar -->
       <aside class="col-md-2 sidebar py-4 px-3 d-flex flex-column" style="min-height: 100vh;">
         <img src="images/beyondPages-01.png" class="img-fluid mx-auto d-block" alt="logo" style="max-width: 100px; max-height: 100px;">
         <h2 class="fs-5 fw-bold">Beyond The Cover</h2>
 
-        <!-- Search Box -->
         <div class="input-group mb-3">
           <input type="text" placeholder="Search" class="form-control custom-search">
           <span class="input-group-text bg-transparent border-0">
@@ -31,7 +29,6 @@
           </span>
         </div>
 
-        <!-- Navigation Links -->
         <ul class="list-unstyled p-3">
           <li><a href="index.html" class="text-dark text-decoration-none d-block py-1">Home</a></li>
           <li><a href="dashboard.html" class="text-dark text-decoration-none d-block py-1">Dashboard</a></li>
@@ -40,7 +37,6 @@
           <li><a href="submit.html" class="btn submit-btn d-block mt-2">Submit Story</a></li>
         </ul>
 
-        <!-- Sidebar Footer Text -->
         <div class="mt-auto">
           <img src="images/beyondPages-01.png" class="img-fluid mx-auto d-block" alt="logo" style="max-width: 100px; max-height: 100px;">
           <p class="px-3">Beyond the Cover is a platform where you can read many stories. If you're a writer, submit your story to be published.</p>
@@ -54,7 +50,6 @@
           <h3 class="section-title mt-4">Favorites</h3>
           <div class="favorites-section overflow-auto">
             <div class="d-flex gap-3">
-              <!-- Repeat favorite items dynamically if possible -->
               <div class="favorite-item">
                 <a href="story1.html"><img src="images/Book2.png" class="favorite-cover" alt="Favorite Item 1"></a>
               </div>
@@ -82,14 +77,12 @@
               <div class="favorite-item">
                 <a href="story3.html"><img src="images/Book4.png" class="favorite-cover" alt="Favorite Item 3"></a>
               </div>
-              <!-- Repeat as needed for other items -->
             </div>
           </div>
 
           <!-- Trending Author Section -->
           <h3 class="section-title mt-4">Trending Author</h3>
           <div class="d-flex overflow-auto py-2 trending-authors-container">
-            <!-- Repeat for authors dynamically if possible -->
             <div class="author-card mx-3">
               <img src="images/beyondPages-01.png" class="rounded-circle" width="60" alt="Author">
               <p class="text-center mt-2">Author Name</p>
@@ -125,14 +118,12 @@
               <img src="images/Pic1.jpg" class="rounded-circle" width="60" alt="Author">
               <p class="text-center mt-2">Author Name</p>
             </div>
-            <!-- Repeat for more authors -->
           </div>
 
           <!-- Recommendation Section -->
           <h3 class="section-title mt-4">Based upon your reading</h3>
           <div class="container">
             <div class="row flex-nowrap overflow-auto py-2 recommendation-container">
-              <!-- Repeat card for each recommendation -->
               <div class="col-12 col-md-3">
                 <div class="roman-card">
                   <div class="roman-image">
@@ -205,7 +196,6 @@
                   </div>
                 </div>
               </div>
-              <!-- Repeat for other cards -->
             </div>
           </div>
 
@@ -227,7 +217,6 @@
               </div>
             </div>
             <div class="row mt-3">
-              <!-- Repeat story cards for each genre -->
               <div class="col-md-3">
                 <div class="story-card">
                   <div class="image-section position-relative">
@@ -324,7 +313,6 @@
                   </div>
                 </div>
               </div>
-              <!-- Repeat for more story cards -->
             </div>
           </div>
         </div>
@@ -373,7 +361,7 @@
       </main>
     </div>
   </div>
-<!-- Bootstrap Bundle with Popper.js -->
+
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 </body>

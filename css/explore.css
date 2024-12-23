@@ -24,6 +24,10 @@
   height: 8px;
 }
 
+h3 {
+  font-family: 'Jim Nightshade', cursive;
+}
+
 /* Author Card */
 .author-card {
   width: 120px;
@@ -127,6 +131,10 @@
   height: 100%;
   object-fit: cover;
   border-radius: 0 15px 15px 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* Story Card */

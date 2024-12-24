@@ -96,6 +96,7 @@ h3 {
 /* Roman Card */
 .roman-card {
   width: 250px;
+  height: 300px;
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -140,6 +141,7 @@ a {
 /* Story Card */
 .story-card {
   width: 220px;
+  height: 270px;
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);

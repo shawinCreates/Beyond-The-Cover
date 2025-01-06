@@ -3,273 +3,247 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Sabin Neupane">
+    <meta name="description" content="Beyond The Cover is a platform where you can read and submit stories. Explore a world of imagination and creativity.">
+    <meta name="keywords" content="stories, reading, writing, literature, Beyond The Cover">
     <title>Beyond The Cover</title>
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-
     <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script&family=Great+Vibes&family=Hanalei+Fill&family=Indie+Flower&family=Jim+Nightshade&family=Pacifico&family=Pattaya&family=Playfair+Display&family=Satisfy&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="container-fluid">
-        <div class="row">
-            <!-- Sidebar -->
-            <aside class="col-md-2 sidebar py-4 px-3 d-flex flex-column" style="min-height: 100vh;">
-                <img src="images/beyondPages-01.png" class="img-fluid mx-auto d-block" alt="logo" style="max-width: 100px; max-height: 100px;">
-                <h2 class="fs-5 fw-bold">Beyond The Cover</h2>
-        
-                <div class="input-group mb-3">
-                  <input type="text" placeholder="Search" class="form-control custom-search">
-                  <span class="input-group-text bg-transparent border-0">
-                    <a href="#"><i class="fas fa-search custom-icon"></i></a>
-                  </span>
-                </div>
-        
-                <ul class="list-unstyled p-3">
-                  <li><a href="index.html" class="text-dark text-decoration-none d-block py-1">Home</a></li>
-                  <li><a href="explore.html" class="text-dark text-decoration-none d-block py-1">Explore</a></li>
-                  <li><a href="about.html" class="text-dark text-decoration-none d-block py-1">About Us</a></li>
-                  <li><a href="contact.html" class="text-dark text-decoration-none d-block py-1">Contact Us</a></li>
-                  <li><a href="submit.html" class="btn submit-btn d-block mt-2">Submit Story</a></li>
-                </ul>
-        
-                <div class="mt-auto">
-                  <img src="images/beyondPages-01.png" class="img-fluid mx-auto d-block" alt="logo" style="max-width: 100px; max-height: 100px;">
-                  <p class="px-3" style="font-family: 'Great Vibes', cursive;">Beyond the Cover is a platform where you can read many stories. If you're a writer, submit your story to be published.</p>
-                </div>
-              </aside>
+    <div class="d-flex flex-column flex-md-row">
+        <!-- Sidebar -->
+        <aside class="p-4 border-end sidebar">
+            <img src="images/beyondPages-01.png" class="img-fluid mb-3 mx-auto d-block" alt="logo">
+            <h2 class="fs-5 fw-bold text-center">Beyond The Cover</h2>
+            <div class="d-flex mb-3">
+                <input type="text" placeholder="Search" class="form-control me-2">
+                <button class="btn btn-primary"><i class="fas fa-search"></i></button>
+            </div>
+            <ul class="list-unstyled">
+                <li><a href="index.html" class="d-block py-2 text-decoration-none text-dark">Home</a></li>
+                <li><a href="explore.html" class="d-block py-2 text-decoration-none text-dark">Explore</a></li>
+                <li><a href="about.html" class="d-block py-2 text-decoration-none text-dark">About Us</a></li>
+                <li><a href="contact.html" class="d-block py-2 text-decoration-none text-dark">Contact Us</a></li>
+                <li><a href="submit.html" class="d-block py-2 text-decoration-none text-dark">Submit Story</a></li>
+            </ul>
+            <div class="mt-4 text-center">
+                <img src="images/beyondPages-01.png" class="img-fluid mb-2" alt="logo">
+                <p class="small text-muted">Beyond the Cover is a platform where you can read many stories. If you're a writer, submit your story to be published.</p>
+            </div>
+        </aside>
+        <button class="toggle-btn d-md-none">
+            <i class="fas fa-bars"></i>
+        </button>
 
-            <main class="col-md-10 px-5">
-                <!-- Hero Section -->
-                <section class="hero text-center mb-5">
-                    <h1 class="display-4 fw-bold">Welcome</h1>
-                    <p class="fs-5">to</p>
-                    <h2 class="display-6">World</h2>
-                    <p class="fs-5">of</p>
-                    <h3 class="display-5 text-primary">Beyond <span class="text-info fst-italic">The Cover</span></h3>
-                    <p class="mt-3 lead">
-                        Dive into the world of imagination inside the work of creative <br> writers. Worlds full of wonders.
-                    </p>
-                    <button class="btn btn-start mt-3">Start Reading</button>
-                </section>
+        <script src="javascript/toggle.js"></script>
 
-                <!-- Featured Section -->
-                <section class="container-fluid mb-5">
-                    <h4 class="fw-semibold mb-3">Featured</h4>
-                    <div id="featuredCarousel" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active" data-bs-interval="5000">
-                                <div class="row g-0">
-                                    <div class="col-md-6 d-flex align-items-center">
-                                        <div class="carousel-caption d-block text-start">
-                                            <h5>The Kite Runner</h5>
-                                            <small class="text-muted">Khaled  Hosseini</small>
-                                            <p>The Kite Runner by Khaled Hosseini is a poignant tale of friendship, betrayal, and redemption set in Afghanistan and the United States. It follows Amir, a privileged boy, and his loyal friend Hassan, the son of his father’s servant. A tragic betrayal during their childhood haunts Amir, leading him on a journey of guilt and eventual atonement as he seeks to right past wrongs and face the consequences of his choices.<a href="book.html?file=Khaled  Hosseini - The Kite Runner-Riverhead Trade (2004).pdf">Read more...</a></p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <img src="images/the kite runner.jpg" class="img-fluid w-100 h-100" alt="Featured Story 1">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item" data-bs-interval="5000">
-                                <div class="row g-0">
-                                    <div class="col-md-6 d-flex align-items-center">
-                                        <div class="carousel-caption d-block text-start">
-                                            <h5>The Pilgrimage</h5>
-                                            <small class="text-muted">Paulo Coelho</small>
-                                            <p>The Pilgrimage by Paulo Coelho is a spiritual journey of self-discovery and transformation. It follows Paulo as he embarks on the Road to Santiago, a historic pilgrimage across Spain, to retrieve a sacred sword. Along the way, he encounters mysterious guides, faces challenges, and learns profound lessons about faith, humility, and the pursuit of true wisdom.<a href="book.html?file=Paulo Coelho - The Pilgrimage  -HarperCollins Publishers Ltd (2005).pdf">Read...</a></p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <img src="images/The-Pilgrimage-by-Paulo-Coelho.jpg" class="img-fluid w-100 h-100" alt="Featured Story 2">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item" data-bs-interval="5000">
-                                <div class="row g-0">
-                                    <div class="col-md-6 d-flex align-items-center">
-                                        <div class="carousel-caption d-block text-start">
-                                            <h5>The Girl with Dragon Tattoo</h5>
-                                            <small class="text-muted">Stieg Larsson</small>
-                                            <p>The Girl with the Dragon Tattoo is a gripping mystery-thriller that intertwines family secrets, corporate corruption, and personal redemption. Journalist Mikael Blomkvist teams up with Lisbeth Salander, a brilliant but troubled hacker, to investigate the decades-old disappearance of a wealthy heiress. As they uncover dark truths, they confront danger and the deeply buried sins of a powerful family.<a href="book.html?file=The Girl with the Dragon Tattoo ( PDFDrive ).pdf">Read...</a></p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <img src="images/The-Girl-with-the-Dragon-tattoo1.jpg" class="img-fluid w-100 h-100" alt="Featured Story 1">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#featuredCarousel" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#featuredCarousel" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-                </section>
+        <!-- Main Content -->
+        <main class="flex-grow-1 p-4">
+            <!-- Hero Section -->
+            <section class="text-center mb-5 hero">
+                <h1 class="display-4">Welcome</h1>
+                <p class="lead">to</p>
+                <h2 class="display-5">World</h2>
+                <p class="lead">of</p>
+                <h3 class="display-5 text-primary">Beyond <span class="text-info fst-italic">The Cover</span></h3>
+                <p class="text-muted">
+                    Dive into the world of imagination inside the work of creative <br> writers. Worlds full of wonders.
+                </p>
+                <button class="btn btn-primary">Start Reading</button>
+            </section>
 
-                <!-- Explore Section -->
-                <section class="mb-5">
-                    <h4 class="fw-semibold mb-3">Explore</h4>
-                    <div class="mb-4">
-                        <button class="btn btn-outline-secondary btn-sm">All</button>
-                        <button class="btn btn-outline-secondary btn-sm">Sci-fi</button>
-                        <button class="btn btn-outline-secondary btn-sm">Mystery</button>
-                        <button class="btn btn-outline-secondary btn-sm">Action</button>
-                        <button class="btn btn-outline-secondary btn-sm">Adventure</button>
-                        <button class="btn btn-outline-secondary btn-sm">Fiction</button>
-                        <button class="btn btn-outline-secondary btn-sm">Fantasy</button>
-                        <button class="btn btn-outline-secondary btn-sm">Comedy</button>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-3 mb-4">
-                            <div class="card h-100">
-                                <img src="images/Call of Wild.jpg" class="card-img-top img-fluid card-img" alt="Story">
-                                <div class="card-body">
-                                    <small class="text-muted"> Jack London</small> 
-                                    <a href="book.html?file=The-Call-of-the-Wild.pdf" class="text-dark text-decoration-none "><h5 class="card-title mt-2">Call of Wild</h5></a>
-                                    <p class="card-text">Buck's survival amid wilderness transforms him.</p>
+            <!-- Featured Section -->
+            <section class="mb-5">
+                <h4 class="mb-4">Featured</h4>
+                <div id="featuredCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="5000">
+                            <div class="row align-items-center">
+                                <div class="col-md-8 text-wrap">
+                                    <h5>The Kite Runner</h5>
+                                    <small class="text-muted">Khaled Hosseini</small>
+                                    <p>The Kite Runner by Khaled Hosseini is a poignant tale of friendship, betrayal, and redemption set in Afghanistan and the United States. It follows Amir, a privileged boy, and his loyal friend Hassan, the son of his father’s servant. A tragic betrayal during their childhood haunts Amir, leading him on a journey of guilt and eventual atonement as he seeks to right past wrongs and face the consequences of his choices <a href="book.html?file=Khaled Hosseini - The Kite Runner.pdf">Read more...</a></p>
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="images/the kite runner.jpg" class="img-fluid" alt="Featured Story 1">
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3 mb-4">
-                            <div class="card h-100">
-                                <img src="images/Doctor-Who-and-the-Empire-of-Glass.jpg" class="card-img-top img-fluid card-img" alt="Story">
-                                <div class="card-body">
-                                    <small class="text-muted">Andy Lane</small> 
-                                    <a href="book.html?file=Doctor-Who-and-the-Empire-of-Glass.pdf" class="text-dark text-decoration-none "><h5 class="card-title mt-2">Doctor Who and the Empire of Glass</h5></a>
-                                    <p class="card-text">The Doctor unravels cosmic secrets at a Venetian congress.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 mb-4">
-                            <div class="card h-100">
-                                <img src="images/half girlfriend.jpg" class="card-img-top img-fluid card-img" alt="Story">
-                                <div class="card-body">
-                                    <small class="text-muted">Chetan Bhagat</small> 
-                                    <a href="book.html?file=Half Girlfriend by Chetan Bhagat ( PDFDrive ).pdf" class="text-dark text-decoration-none "><h5 class="card-title mt-2">Half Girlfriend</h5></a>
-                                    <p class="card-text">Love struggles amid cultural and personal differences.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 mb-4">
-                            <div class="card h-100">
-                                <img src="images/Kidnapped.jpg" class="card-img-top img-fluid card-img" alt="Story">
-                                <div class="card-body">
-                                    <small class="text-muted">Robert Louis Stevenson</small> 
-                                    <a href="book.html?file=Kidnapped.pdf" class="text-dark text-decoration-none "><h5 class="card-title mt-2">Kidnapped</h5></a>
-                                    <p class="card-text">A young Scot's adventure of betrayal and survival.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 mb-4">
-                            <div class="card h-100">
-                                <img src="images/monk who sold his ferrari.jpg" class="card-img-top img-fluid card-img" alt="Story">
-                                <div class="card-body">
-                                    <small class="text-muted">Robin Sharma</small> 
-                                    <a href="book.html?file=The Monk Who Sold His Ferrari ( PDFDrive ).pdf" class="text-dark text-decoration-none "><h5 class="card-title mt-2">Monk who Sold his Ferrari</h5></a>
-                                    <p class="card-text">A lawyer finds purpose through spiritual awakening.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 mb-4">
-                            <div class="card h-100">
-                                <img src="images/Robinson-Crusoe.jpg" class="card-img-top img-fluid card-img" alt="Story">
-                                <div class="card-body">
-                                    <small class="text-muted">Daniel Defoe</small> 
-                                    <a href="book.html?file=Robinson-Crusoe.pdf" class="text-dark text-decoration-none "><h5 class="card-title mt-2">Robinson Crusoe</h5></a>
-                                    <p class="card-text">A castaway's survival and self-discovery on an island.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 mb-4">
-                            <div class="card h-100">
-                                <img src="images/the valkyries.jpg" class="card-img-top img-fluid card-img" alt="Story">
-                                <div class="card-body">
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <div class="row align-items-center">
+                                <div class="col-md-8 text-wrap">
+                                    <h5>The Pilgrimage</h5>
                                     <small class="text-muted">Paulo Coelho</small>
-                                    <a href="book.html?file=Paulo Coelho - The Valkyries (1996).pdf" class="text-dark text-decoration-none "><h5 class="card-title mt-2">The Valkyries</h5></a>
-                                    <p class="card-text">A journey to seek angels and inner transformation.</p>
+                                    <p>The Pilgrimage by Paulo Coelho is a spiritual journey of self-discovery and transformation. It follows Paulo as he embarks on the Road to Santiago, a historic pilgrimage across Spain, to retrieve a sacred sword. Along the way, he encounters mysterious guides, faces challenges, and learns profound lessons about faith, humility, and the pursuit of true wisdom.<a href="book.html?file=Paulo Coelho - The Pilgrimage  -HarperCollins Publishers Ltd (2005).pdf">Read more...</a></p>
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="images/The-Pilgrimage-by-Paulo-Coelho.jpg" class="img-fluid" alt="Featured Story 2">
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3 mb-4">
-                            <div class="card h-100">
-                                <img src="images/ThirtyNineSteps.jpg" class="card-img-top img-fluid card-img" alt="Story">
-                                <div class="card-body">
-                                    <small class="text-muted">John Buchan</small>
-                                    <a href="book.html?file=The-Thirty-Nine-Steps.pdf" class="text-dark text-decoration-none "><h5 class="card-title mt-2">Thirty Nine Steps</h5></a>
-                                    <p class="card-text"> A man uncovers a spy conspiracy while on the run.</p>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <div class="row align-items-center">
+                                <div class="col-md-8 text-wrap">
+                                    <h5>The Girl with the Dragon Tattoo</h5>
+                                    <small class="text-muted">Stieg Larsson</small>
+                                    <p>The Girl with the Dragon Tattoo is a gripping mystery-thriller that intertwines family secrets, corporate corruption, and personal redemption. Journalist Mikael Blomkvist teams up with Lisbeth Salander, a brilliant but troubled hacker, to investigate the decades-old disappearance of a wealthy heiress. As they uncover dark truths, they confront danger and the deeply buried sins of a powerful family.<a href="book.html?file=The Girl with the Dragon Tattoo ( PDFDrive ).pdf">Read more...</a></p>
                                 </div>
+                                <div class="col-md-4">
+                                    <img src="images/The-Girl-with-the-Dragon-tattoo1.jpg" class="img-fluid" alt="Featured Story 3">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add more carousel items here -->
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#featuredCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#featuredCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </section>
+
+            <!-- Explore Section -->
+            <section>
+                <h4 class="mb-4">Explore</h4>
+                <div class="btn-group mb-4" role="group">
+                    <button class="btn btn-outline-primary">All</button>
+                    <button class="btn btn-outline-primary">Sci-fi</button>
+                    <button class="btn btn-outline-primary">Mystery</button>
+                    <button class="btn btn-outline-primary">Action</button>
+                    <button class="btn btn-outline-primary">Adventure</button>
+                    <button class="btn btn-outline-primary">Fiction</button>
+                    <button class="btn btn-outline-primary">Fantasy</button>
+                    <!-- Add more categories -->
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="images/Call of Wild.jpg" class="card-img-top" alt="Story">
+                            <div class="card-body">
+                                <small class="text-muted">Jack London</small>
+                                <a href="book.html?file=The-Call-of-the-Wild.pdf" class="text-decoration-none"><h5>Call of Wild</h5></a>
+                                <p class="small text-muted">Buck's survival amid wilderness transforms him.</p>
                             </div>
                         </div>
                     </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="images/Doctor-Who-and-the-Empire-of-Glass.jpg" class="card-img-top" alt="Story">
+                            <div class="card-body">
+                                <small class="text-muted">Andy Lane</small>
+                                <a href="book.html?file=Doctor-Who-and-the-Empire-of-Glass.pdf" class="text-decoration-none"><h5>Doctor Who and the Empire of Glass</h5></a>
+                                <p class="small text-muted">The Doctor unravels cosmic secrets at a Venetian congress.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="images/half girlfriend.jpg" class="card-img-top" alt="Story">
+                            <div class="card-body">
+                                <small class="text-muted">Chetan Bhagat</small>
+                                <a href="book.html?file=Half Girlfriend by Chetan Bhagat ( PDFDrive ).pdf" class="text-decoration-none"><h5>Half Girlfriend</h5></a>
+                                <p class="small text-muted">Love struggles amid cultural and personal differences.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="images/Kidnapped.jpg" class="card-img-top" alt="Story">
+                            <div class="card-body">
+                                <small class="text-muted">Robert Louis Stevenson</small>
+                                <a href="book.html ?file=Kidnapped.pdf" class="text-decoration-none"><h5>Kidnapped</h5></a>
+                                <p class="small text-muted">A young Scot's adventure of betrayal and survival.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="images/monk who sold his ferrari.jpg" class="card-img-top" alt="Story">
+                            <div class="card-body">
+                                <small class="text-muted">Robin Sharma</small>
+                                <a href="book.html?file=The Monk Who Sold His Ferrari ( PDFDrive ).pdf" class="text-decoration-none"><h5>Monk who Sold his Ferrari</h5></a>
+                                <p class="small text-muted">A lawyer finds purpose through spiritual awakening.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="images/Robinson-Crusoe.jpg" class="card-img-top" alt="Story">
+                            <div class="card-body">
+                                <small class="text-muted">Daniel Defoe</small>
+                                <a href="book.html?file=Robinson-Crusoe.pdf" class="text-decoration-none"><h5>Robinson Crusoe</h5></a>
+                                <p class="small text-muted">A castaway's survival and self-discovery on an island.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="images/the valkyries.jpg" class="card-img-top" alt="Story">
+                            <div class="card-body">
+                                <small class="text-muted">Paulo Coelho</small>
+                                <a href="book.html?file=Paulo Coelho - The Valkyries (1996).pdf" class="text-decoration-none"><h5>The Valkyries</h5></a>
+                                <p class="small text-muted">A journey to seek angels and inner transformation.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="images/ThirtyNineSteps.jpg" class="card-img-top" alt="Story">
+                            <div class="card-body">
+                                <small class="text-muted">John Buchan</small>
+                                <a href="book.html?file=The-Call-of-the-Wild.pdf" class="text-decoration-none"><h5>Thirty Nine Steps</h5></a>
+                                <p class="small text-muted">A man uncovers a spy conspiracy while on the run.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more stories -->
+                </div>
+            </section>
 
-                    <!-- Pagination -->
-                    <nav aria-label="Page navigation" class="mt-4">
-                        <ul class="pagination justify-content-center">
-                            <li class="page-item"><a class="page-link" href="#">&lt;</a></li>
-                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item"><a class="page-link" href="#">4</a></li>
-                            <li class="page-item"><a class="page-link" href="#">5</a></li>
-                            <li class="page-item"><a class="page-link" href="#">&gt;</a></li>
+            <!-- Footer -->
+            <footer class="mt-5">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5>Support</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="about.html" class="text-decoration-none">About us</a></li>
+                            <li><a href="#" class="text-decoration-none">FAQ</a></li>
+                            <li><a href="submit.html" class="text-decoration-none">Submit your Story</a></li>
                         </ul>
-                    </nav>
-                </section>
-
-                <!-- Footer -->
-                <footer class="footer py-4 mt-5">
-                    <div class="container">
-                        <div class="d-flex justify-content-between flex-wrap">
-                            <div class="mb-3">
-                                <h5>Support</h5>
-                                <ul class="list-unstyled m-3">
-                                    <li><a href="about.html" class="text-dark text-decoration-none d-block py-1">About us</a></li>
-                                    <li><a href="#" class="text-dark text-decoration-none d-block py-1">FAQ</a></li>
-                                    <li><a href="submit.html" class="text-dark text-decoration-none d-block py-1">Submit your Story</a></li>
-                                </ul>
-                            </div>
-
-                            <div class="mb-3">
-                                <h5>Contact Us</h5>
-                                <address class="m-3">
-                                    Beyond the Cover<br>
-                                    Kathmandu, Nepal<br>
-                                    +977**********<br>
-                                    <a href="mailto:info@beyondthecover.com" class="text-dark text-decoration-none">info@beyondthecover.com</a>
-                                </address>
-                            </div>
-
-                            <div class="mb-3">
-                                <h5>Get Updates</h5>
-                                <form>
-                                    <div class="input-group">
-                                        <input type="email" class="form-control custom-input" placeholder="Enter your email">
-                                        <button class="btn custom-subscribe-btn">Subscribe</button>
-                                    </div>
-                                </form>
-                                <div class="mt-3">
-                                    <a href="#" class="text-dark"><i class="fab fa-facebook-f fa-2x mx-3"></i></a>
-                                    <a href="#" class="text-dark"><i class="fab fa-instagram fa-2x mx-3"></i></a>
-                                    <a href="#" class="text-dark"><i class="fab fa-twitter fa-2x mx-3"></i></a>
-                                </div>
-                            </div>                        
-                        </div>
-                        <p class="text-center text-muted mt-2">&copy; 2024 Beyond The Cover. All rights reserved.</p>
                     </div>
-                </footer>
-            </main>
-        </div>
+                    <div class="col-md-4">
+                        <h5>Contact Us</h5>
+                        <address>
+                            Beyond the Cover<br>
+                            Kathmandu, Nepal<br>
+                            +977**********<br>
+                            <a href="mailto:info@beyondthecover.com">info@beyondthecover.com</a>
+                        </address>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Get Updates</h5>
+                        <form>
+                            <div class="input-group">
+                                <input type="email" class="form-control" placeholder="Enter your email">
+                                <button class="btn btn-primary">Subscribe</button>
+                            </div>
+                        </form>
+                        <div class="mt-3">
+                            <a href="#" class="me-3"><i class="fab fa-facebook-f fa-2x"></i></a>
+                            <a href="#" class="me-3"><i class="fab fa-instagram fa-2x"></i></a>
+                            <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-center mt-3 text-muted">&copy ; 2024 Beyond The Cover. All rights reserved.</p>
+            </footer>
+        </main>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>

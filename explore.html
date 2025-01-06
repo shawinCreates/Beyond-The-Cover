@@ -17,368 +17,361 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-
-  <div class="container-fluid">
-    <div class="row">
-
-      <aside class="col-md-2 sidebar py-4 px-3 d-flex flex-column" style="min-height: 100vh;">
-        <img src="images/beyondPages-01.png" class="img-fluid mx-auto d-block" alt="logo" style="max-width: 100px; max-height: 100px;">
-        <h2 class="fs-5 fw-bold">Beyond The Cover</h2>
-
-        <div class="input-group mb-3">
-          <input type="text" placeholder="Search" class="form-control custom-search">
-          <span class="input-group-text bg-transparent border-0">
-            <a href="#"><i class="fas fa-search custom-icon"></i></a>
-          </span>
-        </div>
-
-        <ul class="list-unstyled p-3">
-          <li><a href="index.html" class="text-dark text-decoration-none d-block py-1">Home</a></li>
-          <li><a href="explore.html" class="text-dark text-decoration-none d-block py-1">Explore</a></li>
-          <li><a href="about.html" class="text-dark text-decoration-none d-block py-1">About Us</a></li>
-          <li><a href="contact.html" class="text-dark text-decoration-none d-block py-1">Contact Us</a></li>
-          <li><a href="submit.html" class="btn submit-btn d-block mt-2">Submit Story</a></li>
-        </ul>
-
-        <div class="mt-auto">
-          <img src="images/beyondPages-01.png" class="img-fluid mx-auto d-block" alt="logo" style="max-width: 100px; max-height: 100px;">
-          <p class="px-3" style="font-family: 'Great Vibes', cursive;">Beyond the Cover is a platform where you can read many stories. If you're a writer, submit your story to be published.</p>
-        </div>
+  <div class="d-flex flex-column flex-md-row">
+      <!-- Sidebar -->
+      <aside class="p-4 border-end sidebar">
+          <img src="images/beyondPages-01.png" class="img-fluid mb-3 mx-auto d-block" alt="logo">
+          <h2 class="fs-5 fw-bold text-center">Beyond The Cover</h2>
+          <div class="d-flex mb-3">
+              <input type="text" placeholder="Search" class="form-control me-2">
+              <button class="btn btn-primary"><i class="fas fa-search"></i></button>
+          </div>
+          <ul class="list-unstyled">
+              <li><a href="index.html" class="d-block py-2 text-decoration-none text-dark">Home</a></li>
+              <li><a href="explore.html" class="d-block py-2 text-decoration-none text-dark">Explore</a></li>
+              <li><a href="about.html" class="d-block py-2 text-decoration-none text-dark">About Us</a></li>
+              <li><a href="contact.html" class="d-block py-2 text-decoration-none text-dark">Contact Us</a></li>
+              <li><a href="submit.html" class="d-block py-2 text-decoration-none text-dark">Submit Story</a></li>
+          </ul>
+          <div class="mt-4 text-center">
+              <img src="images/beyondPages-01.png" class="img-fluid mb-2" alt="logo">
+              <p class="small text-muted">Beyond the Cover is a platform where you can read many stories. If you're a writer, submit your story to be published.</p>
+          </div>
       </aside>
+      <button class="toggle-btn d-md-none">
+          <i class="fas fa-bars"></i>
+      </button>
+
+      <script src="javascript/toggle.js"></script>
 
       <!-- Main Content -->
-      <main class="col-md-9 col-lg-10">
-        <div class="container py-4">
-          <!-- Favorites Section -->
-          <h3 class="section-title mt-4">Favorites of Many</h3>
-          <div class="favorites-section overflow-auto">
-            <div class="d-flex gap-3">
-              <div class="favorite-item">
-                <a href="book.html?file=Khaled  Hosseini - The Kite Runner-Riverhead Trade (2004).pdf"><img src="images/kite runner.jpg" class="favorite-cover" alt="Favorite Item 1"></a>
+      <main class="flex-grow-1 p-4">
+          <div class="container py-4">
+              <!-- Favorites Section -->
+              <h3 class="section-title mt-4">Favorites of Many</h3>
+              <div class="favorites-section overflow-auto">
+                <div class="d-flex gap-3">
+                  <div class="favorite-item">
+                    <a href="book.html?file=Khaled  Hosseini - The Kite Runner-Riverhead Trade (2004).pdf"><img src="images/kite runner.jpg" class="favorite-cover" alt="Favorite Item 1"></a>
+                  </div>
+                  <div class="favorite-item">
+                    <a href="book.html?file=The Monk Who Sold His Ferrari ( PDFDrive ).pdf"><img src="images/monk who sold his ferrari.jpg" class="favorite-cover" alt="Favorite Item 2"></a>
+                  </div>
+                  <div class="favorite-item">
+                    <a href="book.html?file=The-Thirty-Nine-Steps.pdf"><img src="images/ThirtyNineSteps.jpg" class="favorite-cover" alt="Favorite Item 3"></a>
+                  </div>
+                  <div class="favorite-item">
+                    <a href="book.html?file=william_shakespeare_2012_1.pdf"><img src="images/William Shakespeare Poems.jpg" class="favorite-cover" alt="Favorite Item 1"></a>
+                  </div>
+                  <div class="favorite-item">
+                    <a href="book.html?file=Paulo Coelho - The Pilgrimage  -HarperCollins Publishers Ltd (2005).pdf"><img src="images/the pilgrimage.jpg" class="favorite-cover" alt="Favorite Item 2"></a>
+                  </div>
+                  <div class="favorite-item">
+                    <a href="book.html?file=Paulo Coelho - The Valkyries (1996).pdf"><img src="images/the valkyries.jpg" class="favorite-cover" alt="Favorite Item 3"></a>
+                  </div>
+                  <div class="favorite-item">
+                    <a href="book.html?file=Half Girlfriend by Chetan Bhagat ( PDFDrive ).pdf"><img src="images/half girlfriend.jpg" class="favorite-cover" alt="Favorite Item 1"></a>
+                  </div>
+                  <div class="favorite-item">
+                    <a href="book.html?file=Kidnapped.pdf"><img src="images/Kidnapped.jpg" class="favorite-cover" alt="Favorite Item 2"></a>
+                  </div>
+                  <div class="favorite-item">
+                    <a href="book.html?file=A-Princess-of-Mars.pdf"><img src="images/A princess of mars.jpg" class="favorite-cover" alt="Favorite Item 3"></a>
+                  </div>
+                </div>
               </div>
-              <div class="favorite-item">
-                <a href="book.html?file=The Monk Who Sold His Ferrari ( PDFDrive ).pdf"><img src="images/monk who sold his ferrari.jpg" class="favorite-cover" alt="Favorite Item 2"></a>
+    
+              <!-- Trending Author Section -->
+              <h3 class="section-title mt-4">Trending Author</h3>
+              <div class="d-flex overflow-auto py-2 trending-authors-container">
+                <div class="author-card mx-3">
+                  <img src="images/khaled-hosseini.png" class="rounded-circle" width="60" alt="Author">
+                  <p class="text-center mt-2">Khaled Hosseini</p>
+                </div>
+                <div class="author-card mx-3">
+                  <img src="images/paulo coelho.jpg" class="rounded-circle" width="60" alt="Author">
+                  <p class="text-center mt-2">Paulo Coelho</p>
+                </div>
+                <div class="author-card mx-3">
+                  <img src="images/jack london.jpg" class="rounded-circle" width="60" alt="Author">
+                  <p class="text-center mt-2">Jack London</p>
+                </div>
+                <div class="author-card mx-3">
+                  <img src="images/Chetan Bhagat.jpg" class="rounded-circle" width="60" alt="Author">
+                  <p class="text-center mt-2">Chetan Bhagat</p>
+                </div>
+                <div class="author-card mx-3">
+                  <img src="images/Andy Lane.jpeg" class="rounded-circle" width="60" alt="Author">
+                  <p class="text-center mt-2">Andy Lane</p>
+                </div>
+                <div class="author-card mx-3">
+                  <img src="images/John Buchan.jpg" class="rounded-circle" width="60" alt="Author">
+                  <p class="text-center mt-2">John Buchan</p>
+                </div><div class="author-card mx-3">
+                  <img src="images/Robin Sharma.jpg" class="rounded-circle" width="60" alt="Author">
+                  <p class="text-center mt-2">Robin Sharma</p>
+                </div>
+                <div class="author-card mx-3">
+                  <img src="images/Robert Louis Stevenson.jpg" class="rounded-circle" width="60" alt="Author">
+                  <p class="text-center mt-2">Robert Louis Stevenson</p>
+                </div>
+                <div class="author-card mx-3">
+                  <img src="images/J. K. Rowling.jpg" class="rounded-circle" width="60" alt="Author">
+                  <p class="text-center mt-2">J. K. Rowling</p>
+                </div>
               </div>
-              <div class="favorite-item">
-                <a href="book.html?file=The-Thirty-Nine-Steps.pdf"><img src="images/ThirtyNineSteps.jpg" class="favorite-cover" alt="Favorite Item 3"></a>
+    
+              <!-- Recommendation Section -->
+              <h3 class="section-title mt-4">Based upon your reading</h3>
+              <div class="container">
+                <div class="row flex-nowrap overflow-auto py-2 recommendation-container">
+                  <div class="col-12 col-md-3">
+                    <a href="book.html?file=The Shining - PDF Room.pdf">
+                      <div class="roman-card">
+                        <div class="roman-image">
+                          <img src="images/shining.jpg" alt="Roman Cover" class="img-fluid">
+                        </div>
+                        <div class="roman-content p-3">
+                          <h5 class="title">The Shining</h5>
+                          <p class="author">Stephen King</p>
+                          <p class="description">A family's isolation unveils supernatural horrors and madness.</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-12 col-md-3">
+                    <a href="book.html?file=To Kill a Mockingbird - PDF Room.pdf">
+                      <div class="roman-card">
+                        <div class="roman-image">
+                          <img src="images/to kill mockingbird.jpg" alt="Roman Cover" class="img-fluid">
+                        </div>
+                        <div class="roman-content p-3">
+                          <h5 class="title">To Kill a Mockingbird</h5>
+                          <p class="author">Harper Lee</p>
+                          <p class="description">A young girl confronts racism and injustice in the Deep South.</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-12 col-md-3">
+                    <a href="book.html?file=A-Maker-of-History.pdf">
+                      <div class="roman-card">
+                        <div class="roman-image">
+                          <img src="images/A-Maker-of-History.jpg" alt="Roman Cover" class="img-fluid">
+                        </div>
+                        <div class="roman-content p-3">
+                          <h5 class="title">A Maker of History</h5>
+                          <p class="author">E. Phillips Oppenheim</p>
+                          <p class="description">A chance encounter entangles an ordinary man in international intrigue and espionage.</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-12 col-md-3">
+                    <a href="book.html?file=Accidental-Death.pdf">
+                      <div class="roman-card">
+                        <div class="roman-image">
+                          <img src="images/Accidental Death.jpg" alt="Roman Cover" class="img-fluid">
+                        </div>
+                        <div class="roman-content p-3">
+                          <h5 class="title">Accidental Death</h5>
+                          <p class="author">Peter Grainger</p>
+                          <p class="description">A suspenseful tale of conspiracy and misjudged intentions in space exploration.</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-12 col-md-3">
+                    <a href="book.html?file=Collected-Works-of-Poe.pdf">
+                      <div class="roman-card">
+                        <div class="roman-image">
+                          <img src="images/Collected-Works-of-Poe.jpg" alt="Roman Cover" class="img-fluid">
+                        </div>
+                        <div class="roman-content p-3">
+                          <h5 class="title">Collected Works of Poe</h5>
+                          <p class="author">Edgar Allan Poe</p>
+                          <p class="description">A masterful anthology of gothic tales, poems, and mysteries exploring themes of love, death, and the macabre.</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-12 col-md-3">
+                    <a href="book.html?file=King-Solomon's-Mines-.pdf">
+                      <div class="roman-card">
+                        <div class="roman-image">
+                          <img src="images/king-solomons-mines-j2o9tm2l.jpg" alt="Roman Cover" class="img-fluid">
+                        </div>
+                        <div class="roman-content p-3">
+                          <h5 class="title">King Solomon's Mines-</h5>
+                          <p class="author">H. Rider Haggard</p>
+                          <p class="description">A thrilling expedition to uncover treasure and ancient secrets in Africa.</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
               </div>
-              <div class="favorite-item">
-                <a href="book.html?file=william_shakespeare_2012_1.pdf"><img src="images/William Shakespeare Poems.jpg" class="favorite-cover" alt="Favorite Item 1"></a>
-              </div>
-              <div class="favorite-item">
-                <a href="book.html?file=Paulo Coelho - The Pilgrimage  -HarperCollins Publishers Ltd (2005).pdf"><img src="images/the pilgrimage.jpg" class="favorite-cover" alt="Favorite Item 2"></a>
-              </div>
-              <div class="favorite-item">
-                <a href="book.html?file=Paulo Coelho - The Valkyries (1996).pdf"><img src="images/the valkyries.jpg" class="favorite-cover" alt="Favorite Item 3"></a>
-              </div>
-              <div class="favorite-item">
-                <a href="book.html?file=Half Girlfriend by Chetan Bhagat ( PDFDrive ).pdf"><img src="images/half girlfriend.jpg" class="favorite-cover" alt="Favorite Item 1"></a>
-              </div>
-              <div class="favorite-item">
-                <a href="book.html?file=Kidnapped.pdf"><img src="images/Kidnapped.jpg" class="favorite-cover" alt="Favorite Item 2"></a>
-              </div>
-              <div class="favorite-item">
-                <a href="book.html?file=A-Princess-of-Mars.pdf"><img src="images/A princess of mars.jpg" class="favorite-cover" alt="Favorite Item 3"></a>
+    
+              <!-- Book Tabs Section -->
+              <div class="mt-4">
+                <div class="tab-buttons d-flex">
+                  <button>New</button>
+                  <button>Top Selling</button>
+                  <button>Popular</button>
+                  <div class="dropdown">
+                    <button class="dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Genre</button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Adventure</a>
+                      <a class="dropdown-item" href="#">Romance</a>
+                      <a class="dropdown-item" href="#">Mystery</a>
+                      <a class="dropdown-item" href="#">Science Fiction</a>
+                      <a class="dropdown-item" href="#">Fantasy</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mt-3">
+                  <div class="col-md-3">
+                    <div class="story-card">
+                      <div class="image-section position-relative">
+                        <img src="images/Goblet of Fire.jpg" alt="Story Cover">
+                      </div>
+                      <div class="content-section">
+                        <div class="title"><a href="book.html?file=Harry Potter and the Goblet of Fire - PDF Room.pdf"><h5 class="title">Harry Potter and the Goblet of Fire</h5></a></div>
+                        <div class="rating">★★★★★</div>
+                        <div class="genre">Fantasy</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="story-card">
+                      <div class="image-section position-relative">
+                        <img src="images/Arsène Lupin, Gentleman-Burglar.jpg" alt="Story Cover">
+                      </div>
+                      <div class="content-section">
+                        <div class="title"><a href="book.html?file=The Extraordinary Adventures of Arsène Lupin, Gentleman-Burglar - Maurice Leblanc - PDF Room.pdf"><h5 class="title">Arsène Lupin - Gentleman Burglar </h5></a></div>
+                        <div class="rating">★★★★
+                          ☆</div>
+                        <div class="genre">Crime Fiction, Mystery</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="story-card">
+                      <div class="image-section position-relative">
+                        <img src="images/The Fellowship of the Ring.jpg" alt="Story Cover">
+                      </div>
+                      <div class="content-section">
+                        <div class="title"><a href="book.html?file=The Fellowship of the Ring_ Being the First Part of The Lord of the Rings - PDF Room.pdf"><h5 class="title">The Fellowship of the Ring</h5></a></div>
+                        <div class="rating">★★★★☆</div>
+                        <div class="genre">Fantasy, Fiction</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="story-card">
+                      <div class="image-section position-relative">
+                        <img src="images/The Godfather.jpg" alt="Story Cover">
+                      </div>
+                      <div class="content-section">
+                        <div class="title"><a href="book.html?file=The Godfather - PDF Room.pdf"><h5 class="title">The Godfather</h5></a></div>
+                        <div class="rating">★★★★☆</div>
+                        <div class="genre">Crime, Action</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="story-card">
+                      <div class="image-section position-relative">
+                        <img src="images/The_Great_Gatsby_Cover_1925_Retouched.jpg" alt="Story Cover">
+                      </div>
+                      <div class="content-section">
+                        <div class="title"><a href="book.html?file=The Great Gatsby - PDF Room.pdf"><h5 class="title">The Great Gatsby</h5></a></div>
+                        <div class="rating">★★★★☆</div>
+                        <div class="genre">Tragedy, Literary fiction</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="story-card">
+                      <div class="image-section position-relative">
+                        <img src="images/The_Hunger_Games_cover.jpg" alt="Story Cover">
+                      </div>
+                      <div class="content-section">
+                        <div class="title"><a href="book.html?file=The Hunger Games.pdf"><h5 class="title">The Hunger Games</h5></a></div>
+                        <div class="rating">★★★★☆</div>
+                        <div class="genre">Dystopian, Science fiction, Drama, Action</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="story-card">
+                      <div class="image-section position-relative">
+                        <img src="images/the-memoirs-of-sherlock-holmes-3zkkw02a.jpg" alt="Story Cover">
+                      </div>
+                      <div class="content-section">
+                        <div class="title"><a href="book.html?file=The Memoirs of Sherlock Holmes - Arthur Conan Doyle - PDF Room.pdf"><h5 class="title">The Memoirs of Sherlock Holmes</h5></a></div>
+                        <div class="rating">★★★★☆</div>
+                        <div class="genre">Detective fiction, Mystery</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="story-card">
+                      <div class="image-section position-relative">
+                        <img src="images/The Return of Sherlock Holmes.jpg" alt="Story Cover">
+                      </div>
+                      <div class="content-section">
+                        <div class="title"><a href="book.html?file=The Return of Sherlock Holmes - Arthur Conan Doyle - PDF Room.pdf"><h5 class="title">The Return of Sherlock Holmes</h5></a></div>
+                        <div class="rating">★★★★★</div>
+                        <div class="genre">Mystery</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
 
-          <!-- Trending Author Section -->
-          <h3 class="section-title mt-4">Trending Author</h3>
-          <div class="d-flex overflow-auto py-2 trending-authors-container">
-            <div class="author-card mx-3">
-              <img src="images/khaled-hosseini.png" class="rounded-circle" width="60" alt="Author">
-              <p class="text-center mt-2">Khaled Hosseini</p>
-            </div>
-            <div class="author-card mx-3">
-              <img src="images/paulo coelho.jpg" class="rounded-circle" width="60" alt="Author">
-              <p class="text-center mt-2">Paulo Coelho</p>
-            </div>
-            <div class="author-card mx-3">
-              <img src="images/jack london.jpg" class="rounded-circle" width="60" alt="Author">
-              <p class="text-center mt-2">Jack London</p>
-            </div>
-            <div class="author-card mx-3">
-              <img src="images/Chetan Bhagat.jpg" class="rounded-circle" width="60" alt="Author">
-              <p class="text-center mt-2">Chetan Bhagat</p>
-            </div>
-            <div class="author-card mx-3">
-              <img src="images/Andy Lane.jpeg" class="rounded-circle" width="60" alt="Author">
-              <p class="text-center mt-2">Andy Lane</p>
-            </div>
-            <div class="author-card mx-3">
-              <img src="images/John Buchan.jpg" class="rounded-circle" width="60" alt="Author">
-              <p class="text-center mt-2">John Buchan</p>
-            </div><div class="author-card mx-3">
-              <img src="images/Robin Sharma.jpg" class="rounded-circle" width="60" alt="Author">
-              <p class="text-center mt-2">Robin Sharma</p>
-            </div>
-            <div class="author-card mx-3">
-              <img src="images/Robert Louis Stevenson.jpg" class="rounded-circle" width="60" alt="Author">
-              <p class="text-center mt-2">Robert Louis Stevenson</p>
-            </div>
-            <div class="author-card mx-3">
-              <img src="images/J. K. Rowling.jpg" class="rounded-circle" width="60" alt="Author">
-              <p class="text-center mt-2">J. K. Rowling</p>
-            </div>
-          </div>
-
-          <!-- Recommendation Section -->
-          <h3 class="section-title mt-4">Based upon your reading</h3>
-          <div class="container">
-            <div class="row flex-nowrap overflow-auto py-2 recommendation-container">
-              <div class="col-12 col-md-3">
-                <a href="book.html?file=The Shining - PDF Room.pdf">
-                  <div class="roman-card">
-                    <div class="roman-image">
-                      <img src="images/shining.jpg" alt="Roman Cover" class="img-fluid">
-                    </div>
-                    <div class="roman-content p-3">
-                      <h5 class="title">The Shining</h5>
-                      <p class="author">Stephen King</p>
-                      <p class="description">A family's isolation unveils supernatural horrors and madness.</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-12 col-md-3">
-                <a href="book.html?file=To Kill a Mockingbird - PDF Room.pdf">
-                  <div class="roman-card">
-                    <div class="roman-image">
-                      <img src="images/to kill mockingbird.jpg" alt="Roman Cover" class="img-fluid">
-                    </div>
-                    <div class="roman-content p-3">
-                      <h5 class="title">To Kill a Mockingbird</h5>
-                      <p class="author">Harper Lee</p>
-                      <p class="description">A young girl confronts racism and injustice in the Deep South.</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-12 col-md-3">
-                <a href="book.html?file=A-Maker-of-History.pdf">
-                  <div class="roman-card">
-                    <div class="roman-image">
-                      <img src="images/A-Maker-of-History.jpg" alt="Roman Cover" class="img-fluid">
-                    </div>
-                    <div class="roman-content p-3">
-                      <h5 class="title">A Maker of History</h5>
-                      <p class="author">E. Phillips Oppenheim</p>
-                      <p class="description">A chance encounter entangles an ordinary man in international intrigue and espionage.</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-12 col-md-3">
-                <a href="book.html?file=Accidental-Death.pdf">
-                  <div class="roman-card">
-                    <div class="roman-image">
-                      <img src="images/Accidental Death.jpg" alt="Roman Cover" class="img-fluid">
-                    </div>
-                    <div class="roman-content p-3">
-                      <h5 class="title">Accidental Death</h5>
-                      <p class="author">Peter Grainger</p>
-                      <p class="description">A suspenseful tale of conspiracy and misjudged intentions in space exploration.</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-12 col-md-3">
-                <a href="book.html?file=Collected-Works-of-Poe.pdf">
-                  <div class="roman-card">
-                    <div class="roman-image">
-                      <img src="images/Collected-Works-of-Poe.jpg" alt="Roman Cover" class="img-fluid">
-                    </div>
-                    <div class="roman-content p-3">
-                      <h5 class="title">Collected Works of Poe</h5>
-                      <p class="author">Edgar Allan Poe</p>
-                      <p class="description">A masterful anthology of gothic tales, poems, and mysteries exploring themes of love, death, and the macabre.</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-12 col-md-3">
-                <a href="book.html?file=King-Solomon's-Mines-.pdf">
-                  <div class="roman-card">
-                    <div class="roman-image">
-                      <img src="images/king-solomons-mines-j2o9tm2l.jpg" alt="Roman Cover" class="img-fluid">
-                    </div>
-                    <div class="roman-content p-3">
-                      <h5 class="title">King Solomon's Mines-</h5>
-                      <p class="author">H. Rider Haggard</p>
-                      <p class="description">A thrilling expedition to uncover treasure and ancient secrets in Africa.</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Book Tabs Section -->
-          <div class="mt-4">
-            <div class="tab-buttons d-flex">
-              <button>New</button>
-              <button>Top Selling</button>
-              <button>Popular</button>
-              <div class="dropdown">
-                <button class="dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Genre</button>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="#">Adventure</a>
-                  <a class="dropdown-item" href="#">Romance</a>
-                  <a class="dropdown-item" href="#">Mystery</a>
-                  <a class="dropdown-item" href="#">Science Fiction</a>
-                  <a class="dropdown-item" href="#">Fantasy</a>
-                </div>
-              </div>
-            </div>
-            <div class="row mt-3">
-              <div class="col-md-3">
-                <div class="story-card">
-                  <div class="image-section position-relative">
-                    <img src="images/Goblet of Fire.jpg" alt="Story Cover">
-                  </div>
-                  <div class="content-section">
-                    <div class="title"><a href="book.html?file=Harry Potter and the Goblet of Fire - PDF Room.pdf"><h5 class="title">Harry Potter and the Goblet of Fire</h5></a></div>
-                    <div class="rating">★★★★★</div>
-                    <div class="genre">Fantasy</div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="story-card">
-                  <div class="image-section position-relative">
-                    <img src="images/Arsène Lupin, Gentleman-Burglar.jpg" alt="Story Cover">
-                  </div>
-                  <div class="content-section">
-                    <div class="title"><a href="book.html?file=The Extraordinary Adventures of Arsène Lupin, Gentleman-Burglar - Maurice Leblanc - PDF Room.pdf"><h5 class="title">Arsène Lupin - Gentleman Burglar </h5></a></div>
-                    <div class="rating">★★★★
-                      ☆</div>
-                    <div class="genre">Crime Fiction, Mystery</div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="story-card">
-                  <div class="image-section position-relative">
-                    <img src="images/The Fellowship of the Ring.jpg" alt="Story Cover">
-                  </div>
-                  <div class="content-section">
-                    <div class="title"><a href="book.html?file=The Fellowship of the Ring_ Being the First Part of The Lord of the Rings - PDF Room.pdf"><h5 class="title">The Fellowship of the Ring</h5></a></div>
-                    <div class="rating">★★★★☆</div>
-                    <div class="genre">Fantasy, Fiction</div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="story-card">
-                  <div class="image-section position-relative">
-                    <img src="images/The Godfather.jpg" alt="Story Cover">
-                  </div>
-                  <div class="content-section">
-                    <div class="title"><a href="book.html?file=The Godfather - PDF Room.pdf"><h5 class="title">The Godfather</h5></a></div>
-                    <div class="rating">★★★★☆</div>
-                    <div class="genre">Crime, Action</div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="story-card">
-                  <div class="image-section position-relative">
-                    <img src="images/The_Great_Gatsby_Cover_1925_Retouched.jpg" alt="Story Cover">
-                  </div>
-                  <div class="content-section">
-                    <div class="title"><a href="book.html?file=The Great Gatsby - PDF Room.pdf"><h5 class="title">The Great Gatsby</h5></a></div>
-                    <div class="rating">★★★★☆</div>
-                    <div class="genre">Tragedy, Literary fiction</div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="story-card">
-                  <div class="image-section position-relative">
-                    <img src="images/The_Hunger_Games_cover.jpg" alt="Story Cover">
-                  </div>
-                  <div class="content-section">
-                    <div class="title"><a href="book.html?file=The Hunger Games.pdf"><h5 class="title">The Hunger Games</h5></a></div>
-                    <div class="rating">★★★★☆</div>
-                    <div class="genre">Dystopian, Science fiction, Drama, Action</div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="story-card">
-                  <div class="image-section position-relative">
-                    <img src="images/the-memoirs-of-sherlock-holmes-3zkkw02a.jpg" alt="Story Cover">
-                  </div>
-                  <div class="content-section">
-                    <div class="title"><a href="book.html?file=The Memoirs of Sherlock Holmes - Arthur Conan Doyle - PDF Room.pdf"><h5 class="title">The Memoirs of Sherlock Holmes</h5></a></div>
-                    <div class="rating">★★★★☆</div>
-                    <div class="genre">Detective fiction, Mystery</div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="story-card">
-                  <div class="image-section position-relative">
-                    <img src="images/The Return of Sherlock Holmes.jpg" alt="Story Cover">
-                  </div>
-                  <div class="content-section">
-                    <div class="title"><a href="book.html?file=The Return of Sherlock Holmes - Arthur Conan Doyle - PDF Room.pdf"><h5 class="title">The Return of Sherlock Holmes</h5></a></div>
-                    <div class="rating">★★★★★</div>
-                    <div class="genre">Mystery</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Footer -->
-        <footer class="footer py-4 mt-5">
-          <div class="container">
-              <div class="d-flex justify-content-between flex-wrap">
-                  <div class="mb-3">
+          <!-- Footer -->
+          <footer class="mt-5">
+              <div class="row">
+                  <div class="col-md-4">
                       <h5>Support</h5>
-                      <ul class="list-unstyled m-3">
-                          <li><a href="#" class="text-dark text-decoration-none d-block py-1">About us</a></li>
-                          <li><a href="#" class="text-dark text-decoration-none d-block py-1">FAQ</a></li>
-                          <li><a href="#" class="text-dark text-decoration-none d-block py-1">Submit your Story</a></li>
+                      <ul class="list-unstyled">
+                          <li><a href="about.html" class="text-decoration-none">About us</a></li>
+                          <li><a href="#" class="text-decoration-none">FAQ</a></li>
+                          <li><a href="submit.html" class="text-decoration-none">Submit your Story</a></li>
                       </ul>
                   </div>
-
-                  <div class="mb-3">
+                  <div class="col-md-4">
                       <h5>Contact Us</h5>
-                      <address class="m-3">
+                      <address>
                           Beyond the Cover<br>
                           Kathmandu, Nepal<br>
                           +977**********<br>
-                          <a href="mailto:info@beyondthecover.com" class="text-dark text-decoration-none">info@beyondthecover.com</a>
+                          <a href="mailto:info@beyondthecover.com">info@beyondthecover.com</a>
                       </address>
                   </div>
-
-                  <div class="mb-3">
+                  <div class="col-md-4">
                       <h5>Get Updates</h5>
                       <form>
                           <div class="input-group">
-                              <input type="email" class="form-control custom-input" placeholder="Enter your email">
-                              <button class="btn custom-subscribe-btn">Subscribe</button>
+                              <input type="email" class="form-control" placeholder="Enter your email">
+                              <button class="btn btn-primary">Subscribe</button>
                           </div>
                       </form>
                       <div class="mt-3">
-                          <a href="#" class="text-dark"><i class="fab fa-facebook-f fa-2x mx-3"></i></a>
-                          <a href="#" class="text-dark"><i class="fab fa-instagram fa-2x mx-3"></i></a>
-                          <a href="#" class="text-dark"><i class="fab fa-twitter fa-2x mx-3"></i></a>
+                          <a href="#" class="me-3"><i class="fab fa-facebook-f fa-2x"></i></a>
+                          <a href="#" class="me-3"><i class="fab fa-instagram fa-2x"></i></a>
+                          <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
                       </div>
-                  </div>                        
+                  </div>
               </div>
-              <p class="text-center text-muted mt-2">&copy; 2024 Beyond The Cover. All rights reserved.</p>
-          </div>
-      </footer>
+              <p class="text-center mt-3 text-muted">&copy ; 2024 Beyond The Cover. All rights reserved.</p>
+          </footer>
       </main>
-    </div>
   </div>
 
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 </body>
 </html>

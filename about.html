@@ -18,38 +18,48 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-
-  <div class="container-fluid">
-    <div class="row">
-      <aside class="col-md-2 sidebar py-4 px-3 d-flex flex-column" style="min-height: 100vh;">
-        <img src="images/beyondPages-01.png" class="img-fluid mx-auto d-block" alt="logo" style="max-width: 100px; max-height: 100px;">
-        <h2 class="fs-5 fw-bold">Beyond The Cover</h2>
-
-        <div class="input-group mb-3">
-          <input type="text" placeholder="Search" class="form-control custom-search">
-          <span class="input-group-text bg-transparent border-0">
-            <a href="#"><i class="fas fa-search custom-icon"></i></a>
-          </span>
-        </div>
-
-        <ul class="list-unstyled p-3">
-          <li><a href="index.html" class="text-dark text-decoration-none d-block py-1">Home</a></li>
-          <li><a href="explore.html" class="text-dark text-decoration-none d-block py-1">Explore</a></li>
-          <li><a href="about.html" class="text-dark text-decoration-none d-block py-1">About Us</a></li>
-          <li><a href="contact.html" class="text-dark text-decoration-none d-block py-1">Contact Us</a></li>
-          <li><a href="submit.html" class="btn submit-btn d-block mt-2">Submit Story</a></li>
-        </ul>
-
-        <div class="mt-auto">
-          <img src="images/beyondPages-01.png" class="img-fluid mx-auto d-block" alt="logo" style="max-width: 100px; max-height: 100px;">
-          <p class="px-3" style="font-family: 'Great Vibes', cursive;">Beyond the Cover is a platform where you can read many stories. If you're a writer, submit your story to be published.</p>
-        </div>
+  <div class="d-flex flex-column flex-md-row">
+      <!-- Sidebar -->
+      <aside class="p-4 border-end sidebar">
+          <img src="images/beyondPages-01.png" class="img-fluid mb-3 mx-auto d-block" alt="logo">
+          <h2 class="fs-5 fw-bold text-center">Beyond The Cover</h2>
+          <div class="d-flex mb-3">
+              <input type="text" placeholder="Search" class="form-control me-2">
+              <button class="btn btn-primary"><i class="fas fa-search"></i></button>
+          </div>
+          <ul class="list-unstyled">
+              <li><a href="index.html" class="d-block py-2 text-decoration-none text-dark">Home</a></li>
+              <li><a href="explore.html" class="d-block py-2 text-decoration-none text-dark">Explore</a></li>
+              <li><a href="about.html" class="d-block py-2 text-decoration-none text-dark">About Us</a></li>
+              <li><a href="contact.html" class="d-block py-2 text-decoration-none text-dark">Contact Us</a></li>
+              <li><a href="submit.html" class="d-block py-2 text-decoration-none text-dark">Submit Story</a></li>
+          </ul>
+          <div class="mt-4 text-center">
+              <img src="images/beyondPages-01.png" class="img-fluid mb-2" alt="logo">
+              <p class="small text-muted">Beyond the Cover is a platform where you can read many stories. If you're a writer, submit your story to be published.</p>
+          </div>
       </aside>
+      <button class="toggle-btn d-md-none">
+          <i class="fas fa-bars"></i>
+      </button>
+
+      <script>
+          // JavaScript to handle the sidebar toggle
+          const sidebar = document.querySelector('.sidebar');
+          const mainContent = document.querySelector('main');
+          const toggleBtn = document.querySelector('.toggle-btn');
+
+          toggleBtn.addEventListener('click', () => {
+              sidebar.classList.toggle('hidden');
+              mainContent.classList.toggle('expanded');
+          });
+      </script>
 
       <!-- Main Content -->
-      <main class="col-md-9 col-lg-10">
-        <!-- Header Section -->
-        <header class="text-center m-4">
+      <main class="flex-grow-1 p-4">
+          
+      <!-- Header Section -->
+      <header class="text-center m-4">
           <h2 class="highlight">"Every story is a journey, and every reader a traveler."</h2>
         </header>
         
@@ -93,49 +103,44 @@
             <p>With thousands of stories published and a growing community of readers, Beyond the Cover is making an impact in the world of online storytelling. Join us on this journey and be part of a community that values creativity and imagination.</p>
           </div>
         </div>
-
-        <!-- Footer -->
-        <footer class="footer py-4 mt-5">
-          <div class="container">
-            <div class="d-flex justify-content-between flex-wrap">
-              <div class="mb-3">
-                <h5>Support</h5>
-                <ul class="list-unstyled">
-                  <li><a href="#" class="text-dark text-decoration-none d-block py-1">About us</a></li>
-                  <li><a href="#" class="text-dark text-decoration-none d-block py-1">FAQ</a></li>
-                  <li><a href="#" class="text-dark text-decoration-none d-block py-1">Submit your Story</a></li>
-                </ul>
-              </div>
-              <div class="mb-3">
-                <h5>Contact Us</h5>
-                <address>
-                  Beyond the Cover<br>
-                  Kathmandu, Nepal<br>
-                  +977**********<br>
-                  <a href="mailto:info@beyondthecover.com" class="text-dark text-decoration-none">info@beyondthecover.com</a>
-                </address>
-              </div>
-              <div class="mb-3">
-                <h5>Get Updates</h5>
-                <form>
-                  <div class="input-group">
-                    <input type="email" class="form-control custom-input" placeholder="Enter your email">
-                    <button class="btn custom-subscribe-btn">Subscribe</button>
+          <!-- Footer -->
+          <footer class="mt-5">
+              <div class="row">
+                  <div class="col-md-4">
+                      <h5>Support</h5>
+                      <ul class="list-unstyled">
+                          <li><a href="about.html" class="text-decoration-none">About us</a></li>
+                          <li><a href="#" class="text-decoration-none">FAQ</a></li>
+                          <li><a href="submit.html" class="text-decoration-none">Submit your Story</a></li>
+                      </ul>
                   </div>
-                </form>
-                <div class="mt-3">
-                  <a href="#" class="text-dark"><i class="fab fa-facebook-f fa-2x mx-3"></i></a>
-                  <a href="#" class="text-dark"><i class="fab fa-instagram fa-2x mx-3"></i></a>
-                  <a href="#" class="text-dark"><i class="fab fa-twitter fa-2x mx-3"></i></a>
-                </div>
+                  <div class="col-md-4">
+                      <h5>Contact Us</h5>
+                      <address>
+                          Beyond the Cover<br>
+                          Kathmandu, Nepal<br>
+                          +977**********<br>
+                          <a href="mailto:info@beyondthecover.com">info@beyondthecover.com</a>
+                      </address>
+                  </div>
+                  <div class="col-md-4">
+                      <h5>Get Updates</h5>
+                      <form>
+                          <div class="input-group">
+                              <input type="email" class="form-control" placeholder="Enter your email">
+                              <button class="btn btn-primary">Subscribe</button>
+                          </div>
+                      </form>
+                      <div class="mt-3">
+                          <a href="#" class="me-3"><i class="fab fa-facebook-f fa-2x"></i></a>
+                          <a href="#" class="me-3"><i class="fab fa-instagram fa-2x"></i></a>
+                          <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                      </div>
+                  </div>
               </div>
-            </div>
-            <p class="text-center text-muted mt-2">&copy; 2024 Beyond The Cover. All rights reserved.</p>
-          </div>
-        </footer>
-
+              <p class="text-center mt-3 text-muted">&copy ; 2024 Beyond The Cover. All rights reserved.</p>
+          </footer>
       </main>
-    </div>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
